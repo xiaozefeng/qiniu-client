@@ -4,7 +4,7 @@
 - 支持通过复制文件直接上传(需要支持 pbcopy, pbpaste命令)
 
 ## 配置
-> $HOME/.qiniu_client/conf.josn
+> $HOME/.qiniu/conf.json
 
 ```josn
 {
