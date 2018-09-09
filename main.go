@@ -26,7 +26,7 @@ func init() {
 	flag.StringVar(&pathVar, "path", "", "upload file path")
 }
 
-var config = ".qiniu_client/conf.json"
+var config = ".qiniu/conf.json"
 
 func main() {
 	homePath, err := unixHome()
@@ -92,7 +92,7 @@ func main() {
 	fmt.Printf("%s\n", mdUrl)
 
 	// 将文件写入剪切板
-	tempPath := homePath + "/.qiniu_client/temp.txt"
+	tempPath := homePath + "/.qiniu/temp.txt"
 	err= ioutil.WriteFile(tempPath, []byte(mdUrl), 0777)
 	if err != nil {
 		panic(err)
